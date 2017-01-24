@@ -27,22 +27,24 @@
         </nav>
         <div class="user-block">
           <a class="user-block-search" href="#search-field"></a>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search" id="search-field">
               <label for="search-field">Что ищем?</label>
             </form>
+
             <a class="user-block-login" href="#login-email-field">Вход</a>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
               <input type="email" name="login-email" id="login-email-field">
               <label for="login-email-field">Электронная почта</label>
               <input type="password" name="login-password">
-              <label>Почта</label>
+              <label>Пароль</label>
               <button class="btn" type="submit">Войти</button>
               <div class="">
                 <a class="login-form-link restore-link sign-link" href="#">Забыли пароль?</a>
                 <a class="login-form-link restore-link sign-link" href="#">Новая регистрация</a>
               </div>
             </form>
+
           <a class="user-block-cart" href="#">2 товара</a>
           <div class="shop-cart">
             <table class="cart-table">
@@ -81,7 +83,7 @@
 
         <h1 class="main-title">Сливочное мороженое</h1>
 
-        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-group">
             <label for="sorting-field">Сортировка:</label>
             <select name="sorting" id="sorting-field">
