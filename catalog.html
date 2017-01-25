@@ -13,7 +13,7 @@
         <nav class="main-menu">
           <ul>
             <li class="main-menu-active">Каталог
-              <ul>
+              <ul class="sub-menu">
                 <li class="subnav-item"><a class="subnav-link" href="#">Новинки</a></li>
                   <li class="subnav-item sub-menu-active">Сливочное</li>
                   <li class="subnav-item"><a class="subnav-link" href="#">Щербеты</a></li>
@@ -36,10 +36,10 @@
             <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
               <input type="email" name="login-email" id="login-email-field">
               <label for="login-email-field">Электронная почта</label>
-              <input type="password" name="login-password">
-              <label>Пароль</label>
+              <input type="password" name="login-password" id="password-field">
+              <label for="password-field">Пароль</label>
               <button class="btn" type="submit">Войти</button>
-              <div class="">
+              <div class="link-wrapper">
                 <a class="login-form-link restore-link sign-link" href="#">Забыли пароль?</a>
                 <a class="login-form-link restore-link sign-link" href="#">Новая регистрация</a>
               </div>
@@ -107,10 +107,14 @@
           <div class="filter-group">
             <span class="filter-text">Жирность:</span>
             <div class="fat-wrap">
-              <input type="radio" name="fat" id="fat-0"><label for="fat-0">0%</label>
-              <input type="radio" name="fat" id="fat-bef10"><label for="fat-bef10">До 10%</label>
-              <input type="radio" name="fat" id="fat-bef30"><label for="fat-bef30">До 30%</label>
-              <input type="radio" name="fat" id="fat-aft30"><label for="fat-aft30">Выше 30%</label>
+              <input type="radio" name="fat" id="fat-0">
+              <label for="fat-0">0%</label>
+              <input type="radio" name="fat" id="fat-bef10">
+              <label for="fat-bef10">До 10%</label>
+              <input type="radio" name="fat" id="fat-bef30">
+              <label for="fat-bef30">До 30%</label>
+              <input type="radio" name="fat" id="fat-aft30">
+              <label for="fat-aft30">Выше 30%</label>
             </div>
           </div>
 
@@ -133,92 +137,92 @@
               <label for="jam-field">Джемы</label>
             </div>
           </div>
-          <button class="btn-filter">Применить</button>
+          <button class="btn-filter" type="submit">Применить</button>
         </form>
 
         <section class="catalog">
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">310<span class="measure rub">/кг</span></div>
+            <div class="price">310₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">380<span class="measure rub">/кг</span></div>
+            <div class="price">380₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">355<span class="measure rub">/кг</span></div>
+            <div class="price">355₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">415<span class="measure rub">/кг</span></div>
+            <div class="price">415₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">325<span class="measure rub">/кг</span></div>
+            <div class="price">325₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочное с брусничным джемом</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">410<span class="measure rub">/кг</span></div>
+            <div class="price">410₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочно-черничное с цельными ягодами черники</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">375<span class="measure rub">/кг</span></div>
+            <div class="price">375₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочно-лимонное с карамельной присыпкой</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">320<span class="measure rub">/кг</span></div>
+            <div class="price">320₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочное с шоколадной стружкой</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">440<span class="measure rub">/кг</span></div>
+            <div class="price">440₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочно-ванильное с кусочками шоколада</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">435<span class="measure rub">/кг</span></div>
+            <div class="price">435₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочноe с ментоловым сиропом</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">355<span class="measure rub">/кг</span></div>
+            <div class="price">355₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочное с кусочками черного шоколада</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item">
             <img src="http://placehold.it/200x200">
-            <div class="price">420<span class="measure rub">/кг</span></div>
+            <div class="price">420₽<span class="measure">/кг</span></div>
             <div class="catalog-item-title">Сливочное с мятным сиропом</div>
-            <a href="#" class="btn">Быстрый просмотр</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </article>
         </section>
 

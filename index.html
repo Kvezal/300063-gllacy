@@ -37,14 +37,15 @@
               <input type="search" name="search" id="search-field">
               <label for="search-field">Что ищем?</label>
             </form>
+
             <a class="user-block-login" href="#login-email-field">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
               <input type="email" name="login-email" id="login-email-field">
               <label for="login-email-field">Электронная почта</label>
-              <input type="password" name="login-password">
-              <label>Пароль</label>
+              <input type="password" name="login-password" id="password-field">
+              <label for="password-field">Пароль</label>
               <button class="btn" type="submit">Войти</button>
-              <div class="">
+              <div class="link-wrapper">
                 <a class="login-form-link restore-link sign-link" href="#">Забыли пароль?</a>
                 <a class="login-form-link restore-link sign-link" href="#">Новая регистрация</a>
               </div>
@@ -99,30 +100,30 @@
           <section class="catalog">
             <article class="catalog-item catalog-item-hit">
               <img src="http://placehold.it/200x200">
-              <div class="price rub">310<span class="measure rub">/кг</span></div>
+              <div class="price">310₽<span class="measure">/кг</span></div>
               <div class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
-              <a href="#" class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </article>
 
             <article class="catalog-item catalog-item-hit">
               <img src="http://placehold.it/200x200">
-              <div class="price rub">380<span class="measure rub">/кг</span></div>
+              <div class="price">380₽<span class="measure">/кг</span></div>
               <div class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</div>
-              <a href="#" class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </article>
 
             <article class="catalog-item catalog-item-hit">
               <img src="http://placehold.it/200x200">
-              <div class="price rub">355<span class="measure rub">/кг</span></div>
+              <div class="price">355₽<span class="measure">/кг</span></div>
               <div class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</div>
-              <a href="#" class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </article>
 
             <article class="catalog-item catalog-item-hit">
               <img src="http://placehold.it/200x200">
-              <div class="price rub">415<span class="measure rub">/кг</span></div>
+              <div class="price">415₽<span class="measure">/кг</span></div>
               <div class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</div>
-              <a href="#" class="btn">Быстрый просмотр</a>
+              <a class="btn" href="#">Быстрый просмотр</a>
             </article>
           </section>
 
@@ -156,7 +157,7 @@
           </section>
 
           <div class="news-wrapper">
-            <article class="news block block-left">
+            <article class="news">
               <h2 class="news-title">Новое в нашем блоге</h2>
               <a class="news-link" href="#">10 способов ссервировки фруктовых щербетов к столу</a>
             </article>
@@ -166,7 +167,8 @@
                 и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" name="email" placeholder="Электронная почта">
+                <input type="email" name="email" id="subscribe-email-field">
+                <label for="subscribe-email-field">Электронная почта</label>
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -183,7 +185,7 @@
             и офлайн магазина:<br>
             <b>
               Улица большая Конюшенная<br>
-              19/8, Санкт-Петербург
+              19/8, Санкт-Петербург<br>
             </b>
             <br>
             Для заказов по телефону<br>
