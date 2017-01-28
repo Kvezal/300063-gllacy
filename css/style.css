@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 16px;
   line-height: 22px;
@@ -36,3 +42,218 @@ h2 {
   font-size: 24px;
   line-height: 28px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  width: 160;
+  margin-right: 10px;
+}
+
+.main-menu {
+  float: left;
+  width: 380px;
+}
+
+.user-block {
+  float: right;
+  width: 270px;
+}
+
+.working-time {
+  float: right;
+  width: 200px;
+  clear: both;
+}
+
+.working-time b {
+  display: block;
+}
+
+.slider {
+  margin-top: 285px;
+  margin-bottom: 40px;
+}
+
+.promo-wrapper {
+  margin-bottom: 40px;
+}
+
+.promo-item {
+  float: left;
+  width: 420px;
+}
+
+.promo-item:last-of-type {
+  float: right;
+  width: 420px;
+}
+
+.catalog {
+  margin-bottom: 40px;
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.catalog-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.features {
+  width: 860px;
+  margin-bottom: 40px;
+}
+
+.features-item {
+  float: left;
+  width: 400px;
+}
+
+.features-item:last-of-type {
+  float: right;
+}
+
+.news-wrapper {
+  margin-bottom: 40px;
+}
+
+.news {
+  float: left;
+  width: 420px;
+}
+
+.subscribe {
+  float: right;
+  width: 420px;
+}
+
+.map {
+  width: 900px;
+  min-height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-social {
+  float: left;
+  width: 200px;
+  min-height: 60px;
+}
+
+.footer-links {
+  float: left;
+  width: 380px;
+  font-size: 13px;
+}
+
+.footer-links-part {
+  float: left;
+  width: 170px
+}
+
+.footer-links-part:last-of-type {
+  float: right;
+  width: 170px;
+}
+
+.copyright {
+  float: right;
+  width: 200px;
+}
+
+/*catalog.html*/
+
+.filter {
+  margin-bottom: 40px;
+}
+
+.filter-group {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter-group select {
+  display: block;
+}
+
+.pagination {
+  margin-top: 82px;
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.btn-filter {
+  vertical-align: bottom;
+}
+
+
+/*Вспомогательные стили, будут удалены при завершении работы*/
+
+.content-wrapper {
+  outline: 1px dotted black;
+}
+
+.main-header,
+.slider,
+.promo-wrapper,
+.catalog,
+.features,.news-wraper,
+.main-footer,
+.filter {
+  background-color: rgba(20, 203, 51, 0.5);
+}
+
+.logo,
+.main-menu,
+.user-block,
+.working-time,
+.promo-item,
+.catalog-item,
+.features-item,
+.news,
+.subscribe,
+.footer-social,
+.footer-links,
+.copyright,
+.map,
+h1,
+.filter-group,
+.pagination {
+  background-color: rgba(255, 241, 146, 0.5);
+}
+
+.footer-links-part {
+  background-color: rgba(211, 45, 86, 0.5);
+}
+
+
+
+
+
+
+
+
