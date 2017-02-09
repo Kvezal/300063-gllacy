@@ -105,7 +105,7 @@ h1 {
 .main-menu a,
 .main-menu-active {
   display: block;
-  margin-right: -3px;
+  margin-right: -4px;
   padding: 8px 14px;
 
   font-size: 16px;
@@ -125,7 +125,6 @@ h1 {
 }
 
 .main-menu a:active {
-
   background-color: #ededed;
   box-shadow: inset 0 2px 1px #696969;
 }
@@ -273,7 +272,7 @@ h1 {
   color: #ffffff;
   text-decoration: none;
   vertical-align: top;
-  margin-right: 2px;
+  margin-right: 1px;
 
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -377,7 +376,7 @@ label {
   position: relative;
 
   margin-left: 5px;
-  padding: 8px 18px 8px 44px;
+  padding: 8px 17px 8px 45px;
 }
 
 .user-block-login:hover {
@@ -489,15 +488,15 @@ label {
 .user-block-cart {
   position: relative;
 
-  margin-left: 4px;
-  padding: 8px 35px 9px 44px;
+  margin-left: 3px;
+  padding: 8px 33px 8px 45px;
 }
 
 .user-block-cart-full {
   position: relative;
 
-  margin-left: 4px;
-  padding: 8px 15px 9px 43px;
+  margin-left: 1px;
+  padding: 8px 15px 9px 46px;
 
   color: #323232;
 
@@ -509,7 +508,7 @@ label {
   content: "";
   position: absolute;
   top: 6px;
-  left: 15px;
+  left: 18px;
 
   width: 21px;
   height: 20px;
@@ -706,7 +705,6 @@ main {
   font-size: 32px;
   line-height: 44px;
   color: #ffffff;text-shadow: 0 2px 5px #a0200b;
-
 }
 
 .slider-controls {
@@ -933,7 +931,6 @@ label[for^="btn-slider-"]:hover {
 }
 
 .filter-form-price-range-pict {
-
   width: 218px;
 }
 
@@ -1049,7 +1046,6 @@ label[for^="btn-slider-"]:hover {
   width: 20px;
   height: 20px;
 
-
   border: 1px solid #ffffff;
 }
 
@@ -1080,10 +1076,6 @@ label[for^="btn-slider-"]:hover {
   border-color: rgba(255, 255, 255, .4)
 }
 
-
-
-
-
 .filler-taste-wrap {
   padding: 6px 19px 8px 15px;
 
@@ -1096,19 +1088,13 @@ label[for^="btn-slider-"]:hover {
 
 .filler-taste-wrap label {
   position: relative;
-  margin-right: 50px;
-  padding-left: 30px;
+  margin-right: 21px;
+  padding-left: 29px;
 }
 
 .filler-taste-wrap label:last-of-type {
   margin: 0;
 }
-
-
-
-
-
-
 
 .filler-taste-wrap label::before {
   content: "";
@@ -1132,7 +1118,6 @@ label[for^="btn-slider-"]:hover {
 
   width: 10px;
   height: 5px;
-
 
   border: 2px solid #ffffff;
   border-top: none;
@@ -1173,10 +1158,6 @@ label[for^="btn-slider-"]:hover {
   background-color: #ffffff;
   box-shadow: inset 0 2px 1px #696969;
 }
-
-
-
-
 
 .catalog {
   margin-bottom: 39px;
@@ -1253,7 +1234,7 @@ label[for^="btn-slider-"]:hover {
 
 .price {
   position: relative;
-  top: -66px;
+  top: -63px;
 
   font-size: 45px;
   line-height: 45px;
@@ -1428,7 +1409,7 @@ label[for^="btn-slider-"]:hover {
 
 .features {
   margin-bottom: 40px;
-  padding: 23px 17px 25px 19px;
+  padding: 24px 17px 24px 19px;
 
   border-radius: 15px;
   background: #efe2c7 url("../img/features-background.jpg");
@@ -1638,7 +1619,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   right: 0;
 
   width: 302px;
-  padding: 30px 0 32px 25px;
+  padding: 30px 0 32px 26px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1680,7 +1661,6 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   font-weight: bold;
   color: #fefefe;
 }
-
 
 .main-footer > div {
   min-height: 60px;
@@ -1827,9 +1807,6 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   background: url("../img/footer-logo.png") no-repeat;
 }
 
-/*catalog.html*/
-
-
 .overlay {
   position: fixed;
   top: 0;
@@ -1853,14 +1830,12 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   display: none;
   width: 478px;
   min-height: 442px;
-  margin-top: -221px;
-  margin-left: -239px;
   padding: 19px 25px 1px;
 
   border-radius: 5px;
   background: #f8f7f4;
+  transform: translate(-50%, -50%);
 }
-
 
 .feedback-form::before,
 .feedback-form::after {
