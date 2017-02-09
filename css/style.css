@@ -1836,11 +1836,12 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   left: 0;
   z-index: 10;
 
+  display: none;
   width: 100%;
   height: 100%;
 
   background: #000000;
-  opacity: 0.5
+  opacity: 0.5;
 }
 
 .feedback-form {
@@ -1849,6 +1850,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   left: 50%;
   z-index: 20;
 
+  display: none;
   width: 478px;
   min-height: 442px;
   margin-top: -221px;
@@ -1893,6 +1895,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 
 .feedback-form input {
   display: block;
+  width: 267px;
   margin-bottom: 24px;
 }
 
