@@ -100,6 +100,8 @@ h1 {
 
 .main-menu li {
   display: inline-block;
+
+  vertical-align: top;
 }
 
 .main-menu a,
@@ -164,6 +166,7 @@ h1 {
   position: absolute;
   top: 37px;
   left: -6px;
+  z-index: 5;
 
   width: 144px;
 
@@ -174,6 +177,10 @@ h1 {
 
 .sub-menu li {
   display: block;
+}
+
+.sub-menu li:nth-of-type(2) {
+  margin-top: -4px;
 }
 
 .subnav-item {
@@ -296,7 +303,7 @@ h1 {
   position: absolute;
   right: 225px;
   top: 37px;
-  z-index: 1;
+  z-index: 15;
 
   padding: 20px 15px;
 
@@ -405,6 +412,7 @@ label {
   position: absolute;
   right: 125px;
   top: 37px;
+  z-index: 10;
 
   padding: 20px;
 
@@ -526,7 +534,7 @@ label {
   position: absolute;
   top: 36px;
   right: 0;
-  z-index: 10;
+  z-index: 5;
 
   visibility: hidden;
   width: 540px;
@@ -710,7 +718,7 @@ main {
 .slider-controls {
   position: absolute;
   left: 0;
-  bottom: 11px;
+  bottom: 21px;
   z-index: 20;
 
   font-size: 0
@@ -721,6 +729,8 @@ main {
   width: 17px;
   height: 17px;
   margin-right: 8px;
+
+  vertical-align: top;
 
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -770,6 +780,7 @@ label[for^="btn-slider-"]:hover {
 
 .promo-item:first-of-type {
   float: left;
+  margin-right: 2.3%;
 
   background: #702d39 url("../img/promo-item1.jpg") no-repeat 35% 52%;
 }
@@ -824,6 +835,8 @@ label[for^="btn-slider-"]:hover {
 
   display: inline-block;
   padding-right: 20px;
+
+  vertical-align: top;
 }
 
 .breadcrumbs a {
@@ -1160,7 +1173,7 @@ label[for^="btn-slider-"]:hover {
 }
 
 .catalog {
-  margin-bottom: 39px;
+  margin-bottom: 20px;
 
   font-size: 0;
 }
@@ -1171,7 +1184,7 @@ label[for^="btn-slider-"]:hover {
 
   display: inline-block;
   width: 23.27%;
-  min-height: 295px;
+  min-height: 275px;
   margin-right: 2.3%;
   margin-top: 40px;
 
@@ -1180,7 +1193,6 @@ label[for^="btn-slider-"]:hover {
 }
 
 .over-block {
-  content: "";
   position: absolute;
   top: -9px;
   left: -5%;
@@ -1263,7 +1275,7 @@ label[for^="btn-slider-"]:hover {
 
 .catalog-item-title {
   margin-top: -43px;
-  margin-bottom: -2px;
+  margin-bottom: -0px;
   padding-right: 2px;
   padding-left: 2px;
 
@@ -1305,7 +1317,7 @@ label[for^="btn-slider-"]:hover {
 }
 
 .pagination {
-  margin-top: 84px;
+  margin-top: 79px;
   margin-bottom: 29px;
 
   text-align: right;
@@ -1321,7 +1333,7 @@ label[for^="btn-slider-"]:hover {
   line-height: 26px;
   font-weight: 500;
   color: #ffffff;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: center;
   text-decoration: none;
 
@@ -1408,6 +1420,7 @@ label[for^="btn-slider-"]:hover {
 }
 
 .features {
+  margin-top: 37px;
   margin-bottom: 40px;
   padding: 24px 17px 24px 19px;
 
@@ -1434,6 +1447,10 @@ label[for^="btn-slider-"]:hover {
   padding-left: 56px;
 
   box-sizing: border-box;
+}
+
+.features-item:first-of-type {
+  margin-right: 2.3%;
 }
 
 .features-item::before {
@@ -1491,6 +1508,7 @@ label[for^="btn-slider-"]:hover {
 
 .news {
   float: left;
+  margin-right: 2.3%;
   padding-top: 23px;
   padding-left: 18px;
 
@@ -1597,6 +1615,9 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   min-height: 428px;
   margin-left: auto;
   margin-right: auto;
+
+  font-size: 50px;
+
   background: #999999;
 }
 
@@ -1672,7 +1693,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   width: 230px;
   padding-top: 17px;
 
-  text-align: left
+  text-align: left;
 }
 
 .social {
@@ -1680,6 +1701,8 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   width: 38px;
   height: 38px;
   margin-right: 7px;
+
+  vertical-align: middle;
 
   border: 3px solid rgba(255, 255, 255, 0.625);
   border-radius: 50%;
@@ -1690,7 +1713,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 }
 
 .social:last-of-type {
-  margin: 0
+  margin: 0;
 }
 
 .social-tw {
@@ -1724,13 +1747,16 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   padding-top: 12px;
 
   font-size: 13px;
-  text-align:left
+  vertical-align: top;
+  text-align: left;
 }
 
 .footer-links-part {
   display: inline-block;
   width: 150px;
   margin-right: 21px;
+
+  vertical-align: top;
 
   box-sizing: border-box;
 }
@@ -1811,21 +1837,31 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
 
   display: none;
   width: 100%;
   height: 100%;
 
   background: #000000;
-  opacity: 0.5;
+  opacity: 0;
+}
+
+.overlay-appear {
+  display: block;
+
+  animation-delay: 0.2s;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  transition-duration: .2s;
+  animation-name: appear;
 }
 
 .feedback-form {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 20;
+  z-index: 100;
 
   display: none;
   width: 478px;
@@ -1835,14 +1871,37 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   border-radius: 5px;
   background: #f8f7f4;
   transform: translate(-50%, -50%);
+
 }
 
-.feedback-form::before,
-.feedback-form::after {
+.content-show {
+  display: block;
+
+  animation-name: show;
+  animation-duration: .5s;
+  animation-direction: alternate;
+}
+
+.feedback-form-invalid {
+  animation-name: invalid;
+  animation-duration: 0.6s;
+}
+
+.close {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+
+  width: 24px;
+  height: 24px;
+}
+
+.close::before,
+.close::after {
   content: "";
   position: absolute;
-  top: 24px;
-  right: 10px;
+  top: 11px;
+  right: 0px;
 
   width: 25px;
   height: 2px;
@@ -1850,11 +1909,11 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   background-color: #000000;
 }
 
-.feedback-form::before {
+.close::before {
   transform: rotate(-45deg)
 }
 
-.feedback-form::after {
+.close::after {
   transform: rotate(45deg);
 }
 
@@ -1889,6 +1948,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 
 .feedback-form label[for="comments-field"] {
   position: absolute;
+
   margin-top: -177px;
 }
 
@@ -1898,40 +1958,41 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   margin-left: auto;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.2);
 
-/*Вспомогательные стили, будут удалены при завершении работы*/
+  }
 
-/*
-.content-wrapper {
-  outline: 1px dotted black;
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
-.main-header,
-.catalog,
-.news-wrapper,
-.main-footer,
-.filter {
-  background-color: rgba(20, 203, 51, 0.5);
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  to {
+    opacity: .5;
+    transform: scale(1);
+  }
 }
 
-.logo,
-.main-menu,
-.user-block,
-.working-time,
-.promo-item,
-.catalog-item,
-.subscribe,
-.footer-social,
-.footer-links,
-.copyright,
-.map,
-h1,
-.filter-group,
-.pagination {
-  background-color: rgba(255, 241, 146, 0.5);
-}
+@keyframes invalid {
+  0, 100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
 
-.footer-links-part {
-  background-color: rgba(211, 45, 86, 0.5);
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-50%, -50%) translate(-10px, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate(-50%, -50%) translate(10px, 0);
+  }
 }
-*/
