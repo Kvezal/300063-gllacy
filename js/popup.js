@@ -19,13 +19,13 @@ window.addEventListener('keydown', function(event) {
     if(modal.classList.contains('content-show'))
     modal.classList.remove('content-show');
     modalBackground.classList.remove('overlay-appear');
-    modal.classList.remove('feenback-form-invalid');
+    modal.classList.remove('feedback-form-invalid');
     } else if(event.keyCode === 13) {
-    if(!login.value || !email.value || !comment.value) {
-      modal.classList.remove('feedback-form-invalid');
-      modal.offsetWidth = modal.offsetWidth;
-      event.preventDefault();
-      modal.classList.add('feedback-form-invalid');
+      if(!login.value || !email.value || !comment.value) {
+        modal.classList.remove('feedback-form-invalid');
+        modal.offsetWidth = modal.offsetWidth;
+        event.preventDefault();
+        modal.classList.add('feedback-form-invalid');
       };
     };
 });
