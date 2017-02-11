@@ -7,8 +7,8 @@ body {
 body {
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
   font-family: Roboto, Arial, sans-serif;
+  color: #323232;
 }
 
 .inner-page {
@@ -20,11 +20,12 @@ input[name="toggle"] {
 }
 
 .site-wrapper {
+  background-image: url("../img/background-slider2.png");
   background-repeat: no-repeat;
   background-position: top center;
+
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  background-image: url("../img/background-slider2.png");
 }
 
 .site-wrapper::before,
@@ -42,22 +43,6 @@ input[name="toggle"] {
   background-image: url("../img/background-slider3.png")
 }
 
-h1 {
-  font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
-}
-
-.news-title {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.subtitle {
-  font-size: 24px;
-  line-height: 28px;
-}
-
 .content-wrapper {
   min-width: 900px;
   max-width: 1200px;
@@ -68,12 +53,14 @@ h1 {
 .clearfix::after,
 .clearfix::before {
   content: "";
+
   display: table;
   clear: both;
 }
 
 .main-header {
   position: relative;
+
   margin-right: 2.3%;
   margin-left: 2.3%;
 }
@@ -110,13 +97,14 @@ h1 {
   margin-right: -4px;
   padding: 8px 14px;
 
+  font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
-  color: #ffffff;
   font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
 
   border-radius: 20px;
+
   transition-duration: 0.3s;
 }
 
@@ -144,10 +132,10 @@ h1 {
 .sub-menu,
 .search-form,
 .login-form {
-  visibility: hidden;
-
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
   opacity: 0;
+  visibility: hidden;
+
   transition-duration: 0.5s;
 }
 
@@ -157,22 +145,23 @@ h1 {
 .login-form:hover,
 .user-block-search:hover + .search-form,
 .search-form:hover {
+  opacity: 1;
   visibility: visible;
 
-  opacity: 1;
+  transform: translateY(-50px);
 }
 
 .sub-menu {
   position: absolute;
-  top: 37px;
+  top: 87px;
   left: -6px;
   z-index: 5;
 
   width: 144px;
-
-  border-radius: 6px;
   box-sizing: border-box;
+
   background-color: #f8f7f4;
+  border-radius: 6px;
 }
 
 .sub-menu li {
@@ -189,15 +178,15 @@ h1 {
 
 .subnav-item .subnav-link {
   width: 144px;
+  box-sizing: border-box;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #333333;
-  text-decoration: none;
 
   border-radius: 0;
-  box-sizing: border-box;
+  text-decoration: none;
 }
 
 .subnav-item:first-of-type::after {
@@ -219,18 +208,18 @@ h1 {
 .subnav-item:first-of-type .subnav-link {
   margin-bottom: 3px;
   padding-top: 12px;
-  padding-left: 20px;
   padding-bottom: 12px;
+  padding-left: 20px;
 
   font-weight: bold;
 
-  border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .subnav-item:last-of-type .subnav-link {
-  border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .subnav-item .subnav-link:hover {
@@ -244,12 +233,12 @@ h1 {
 
 .sub-menu-active {
   padding-top: 8px;
-  padding-left: 20px;
   padding-bottom: 8px;
+  padding-left: 20px;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
 
   background-color: #d07058;
@@ -262,27 +251,27 @@ h1 {
   min-width: 284px;
   margin-top: 23px;
   padding-left: 23px;
+  box-sizing: border-box;
 
   text-align: right;
-
-  box-sizing: border-box;
 }
 
 .user-block a,
 .user-block-cart,
 .user-block-cart-full {
   display: inline-block;
-
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration: none;
-  vertical-align: top;
   margin-right: 1px;
 
-  border-radius: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  color: #ffffff;
+
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  text-decoration: none;
+
   transition-property: background-color;
   transition-duration: 0.3s;
 }
@@ -291,24 +280,24 @@ h1 {
   width: 32px;
   height: 32px;
 
-  border-radius: 50%;
   background: url("../img/sprites.png") no-repeat 8px 7px;
+  border-radius: 50%;
 }
 
 .user-block-search:hover {
   background: #f8f7f4 url("../img/sprites.png") no-repeat 8px -32px;
 }
 
- .search-form {
+.search-form {
   position: absolute;
+  top: 87px;
   right: 225px;
-  top: 37px;
   z-index: 15;
 
   padding: 20px 15px;
 
-  border-radius: 5px;
   background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .search-form input[type="search"],
@@ -319,10 +308,10 @@ h1 {
 .feedback-form input[type="email"],
 .feedback-form textarea {
   height: 42px;
-
-  border-radius: 5px;
-  border: 1px solid #d3d3d2;
   box-sizing: border-box;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
   outline: none;
 }
 
@@ -337,9 +326,9 @@ h1 {
 .feedback-form label,
 .feedback-form label,
 .feedback-form textarea {
+  font-weight: 400px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400px;
   color: #999999;
 
   transition-duration: 0.3s;
@@ -430,14 +419,14 @@ h1 {
 
 .login-form {
   position: absolute;
+  top: 87px;
   right: 125px;
-  top: 37px;
   z-index: 10;
 
   padding: 20px;
 
-  border-radius: 5px;
   background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .login-form input {
@@ -466,20 +455,21 @@ h1 {
   display: inline-block;
   padding: 13px 26px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
-  color: #fefefe;
   vertical-align: top;
-  text-decoration: none;
+  color: #fefefe;
 
-  border-style: none;
-  border-radius: 50px;
-  outline: none;
   background-image: linear-gradient(bottom, #e74a35 0%, #f26843 100%);
   background-image: -webkit-linear-gradient(bottom, #e74a35 0%, #f26843 100%);
   background-image: -ms-linear-gradient(bottom, #e74a35 0%, #f26843 100%);
+  border-style: none;
+  border-radius: 50px;
+  outline: none;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  text-decoration: none;
+
   transition-duration: 0.3s;
 }
 
@@ -502,15 +492,16 @@ h1 {
 }
 
 .link-wrapper a {
-  color: #323232;
   padding: 0;
   margin: 0;
 
   font-size: 13px;
   line-height: 24px;
-  text-decoration: underline;
+  color: #323232;
 
   border-radius: 0;
+  text-decoration: underline;
+
   transition-duration: 0.3s;
 }
 
@@ -558,35 +549,37 @@ h1 {
 
 .shop-cart {
   position: absolute;
-  top: 36px;
+  top: 88px;
   right: 0;
   z-index: 5;
 
-  visibility: hidden;
   width: 540px;
   padding: 15px 15px 21px;
 
-  border-radius: 5px;
   background-color: #f8f7f4;
+  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
   opacity: 0;
+  visibility: hidden;
+
   transition-duration: 0.5s;
 }
 
 .user-block-cart-full:hover .shop-cart {
+  opacity: 1;
   visibility: visible;
 
-  opacity: 1;
+  transform: translateY(-50px);
 }
 
 .cart-table {
   width: 100%;
 
+  font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 500;
-  color: #323232;
   text-align: left;
+  color: #323232;
 
   border-collapse: collapse;
 }
@@ -640,8 +633,8 @@ h1 {
   width: 33px;
   height: 33px;
 
-  border-radius: 50%;
   background-size: 33px;
+  border-radius: 50%;
 }
 
 .orange::after {
@@ -670,9 +663,9 @@ h1 {
 }
 
 .cart-table .result {
+  font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-  font-weight: bold;
   text-align: right;
 
   border-top: 1px solid #cacac7;
@@ -690,11 +683,11 @@ h1 {
   right: 0;
   bottom: -52px;
 
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  font-weight: bold;
-  color: #ffffff;
   text-align: right;
+  color: #ffffff;
 }
 
 .working-time b {
@@ -719,17 +712,17 @@ main {
 
 .slide {
   display: none;
+
   text-align: center;
 }
 
 .slide-title {
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 
+  font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
   color: #ffffff;
 }
 
@@ -738,16 +731,18 @@ main {
 
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;text-shadow: 0 2px 5px #a0200b;
+  color: #ffffff;
+
+  text-shadow: 0 2px 5px #a0200b;
 }
 
 .slider-controls {
   position: absolute;
-  left: 0;
   bottom: 21px;
+  left: 0;
   z-index: 20;
 
-  font-size: 0
+  font-size: 0;
 }
 
 .slider-controls label {
@@ -799,9 +794,9 @@ label[for^="btn-slider-"]:hover {
   width: 48.85%;
   min-height: 230px;
   padding: 16px 21px 24px 18px;
+  box-sizing: border-box;
 
   border-radius: 15px;
-  box-sizing: border-box;
 }
 
 .promo-item:first-of-type {
@@ -820,19 +815,19 @@ label[for^="btn-slider-"]:hover {
 .promo-title {
   margin: 0;
 
+  font-weight: bold;
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-  font-weight: bold;
 }
 
 .promo-text {
   margin-top: 15px;
   margin-bottom: 67px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  font-weight: bold;
   color: #ffffff;
 }
 
@@ -868,20 +863,20 @@ label[for^="btn-slider-"]:hover {
 .breadcrumbs a {
   display: block;
 
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;
   color: #ffffff;
-  text-decoration: none;
 
   border-bottom: 1px solid rgba(255, 255, 255, .2);
+  text-decoration: none;
 }
 
 .breadcrumbs a:hover,
 .breadcrumbs a:active {
   color: #ffbc9e;
 
-  border-color: rgba(255, 188, 158, 0.3);
+  border-color: rgba(255, 188, 158, .3);
 }
 
 .breadcrumbs-active a,
@@ -906,6 +901,7 @@ label[for^="btn-slider-"]:hover {
   border: 1px solid #ffffff;
   border-top-style: none;
   border-left-style: none;
+
   transform: rotate(-45deg);
 }
 
@@ -922,6 +918,10 @@ label[for^="btn-slider-"]:hover {
 .main-title {
   margin: 0;
   margin-top: -3px;
+
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
 }
 
 .filter {
@@ -934,15 +934,24 @@ label[for^="btn-slider-"]:hover {
   margin-right: 11px;
 
   font-weight: 500;
-  color: #ffffff;
   vertical-align: top;
+  color: #ffffff;
+}
+
+.filter-group:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.filter-group:nth-of-type(4) {
+  margin-right: 8px;
 }
 
 .filter-group label[for="sorting-field"],
 .filter-text {
+  margin-left: 15px;
+
   font-size: 14px;
   line-height: 16px;
-  margin-left: 15px;
 }
 
 .filter-group label[for="sorting-field"] {
@@ -956,11 +965,11 @@ label[for^="btn-slider-"]:hover {
 .btn-filter {
   min-height: 36px;
   margin-top: 5px;
+  box-sizing: border-box;
 
+  background-color: rgba(255, 255, 255, .2);
   border: none;
   border-radius: 100px;
-  background-color: rgba(255, 255, 255, .2);
-  box-sizing: border-box;
 }
 
 .filter-group select:hover {
@@ -983,9 +992,9 @@ label[for^="btn-slider-"]:hover {
 
 .filter-group select,
 .filter-group label {
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
   color: #ffffff;
 
   cursor: pointer;
@@ -1004,15 +1013,15 @@ label[for^="btn-slider-"]:hover {
 }
 
 .filter-form-price-range-main-scale {
-  left: 16px;
   right: 16px;
+  left: 16px;
 
-  background-color: rgba(255, 255, 255, .5)
+  background-color: rgba(255, 255, 255, .5);
 }
 
 .filter-form-price-range-diapason {
-  left: 34px;
   right: 66px;
+  left: 34px;
 
   background-color: #ffffff;
 }
@@ -1025,14 +1034,15 @@ label[for^="btn-slider-"]:hover {
   width: 20px;
   height: 20px;
 
-  border-radius: 50%;
   background-color: #ffffff;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .1)
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 }
 
 .filter-form-price-range-low:hover,
 .filter-form-price-range-high:hover {
   cursor: pointer;
+
   transform: scale(1.1);
 }
 
@@ -1048,9 +1058,9 @@ label[for^="btn-slider-"]:hover {
   min-width: 415px;
   padding: 9px 16px 9px 17px;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
 }
 
 .fat-wrap input {
@@ -1074,8 +1084,9 @@ label[for^="btn-slider-"]:hover {
   content: "";
   position: absolute;
 
-  border-radius: 50%;
   box-sizing: border-box;
+
+  border-radius: 50%;
 }
 
 .fat-wrap label::before {
@@ -1096,12 +1107,14 @@ label[for^="btn-slider-"]:hover {
   height: 10px;
 
   border-radius: 50%;
+
   transition-duration: .3s;
   transform: scale(0);
 }
 
 .fat-wrap input:checked + label:after {
   background-color: #ffffff;
+
   transform: scale(1);
 }
 
@@ -1112,7 +1125,7 @@ label[for^="btn-slider-"]:hover {
 
 .filter-group label:disabled::before,
 .filter-group input + label:disabled::before {
-  border-color: rgba(255, 255, 255, .4)
+  border-color: rgba(255, 255, 255, .4);
 }
 
 .filler-taste-wrap {
@@ -1143,10 +1156,10 @@ label[for^="btn-slider-"]:hover {
 
   width: 20px;
   height: 20px;
+  box-sizing: border-box;
 
   border: 1px solid #ffffff;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 .filler-taste-wrap label::after {
@@ -1162,27 +1175,29 @@ label[for^="btn-slider-"]:hover {
   border-top: none;
   border-right: none;
 
-  transform: scale(.01);
   transition-duration: .2s;
+  transform: scale(.01);
 }
 
  .filler-taste-wrap input:checked + label::after {
-  transform: rotate(-45deg) scale(1);
   transition-duration: .5s;
+  transform: rotate(-45deg) scale(1);
 }
 
 .btn-filter {
   min-width: 144px;
+  margin-right: 0;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
   vertical-align: bottom;
+  color: #ffffff;
 
   border: 2px solid #ffffff;
-  transition-duration: 0.2s;
   cursor: pointer;
+
+  transition-duration: 0.2s;
 }
 
 .btn-filter:hover {
@@ -1211,8 +1226,8 @@ label[for^="btn-slider-"]:hover {
   display: inline-block;
   width: 23.27%;
   min-height: 275px;
-  margin-right: 2.3%;
   margin-top: 40px;
+  margin-right: 2.3%;
 
   font-size: 16px;
   vertical-align: top;
@@ -1224,23 +1239,23 @@ label[for^="btn-slider-"]:hover {
   left: -5%;
   z-index: -1;
 
-  visibility: hidden;
   width: 110%;
   height: 133%;
-
-  border-radius: 5px;
   box-sizing: border-box;
+
   background: rgba(255, 255, 255, .3);
+  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
   opacity: 0;
+  visibility: hidden;
+
   transition-duration: 0.5s;
 }
 
 .catalog-item:hover .over-block,
 .catalog-item:hover .btn {
-  visibility: visible;
-
   opacity: 1;
+  visibility: visible;
 }
 
 .catalog-item:hover {
@@ -1263,7 +1278,7 @@ label[for^="btn-slider-"]:hover {
   width: 61px;
   height: 61px;
 
-  background: url("../img/hit.png") no-repeat
+  background: url("../img/hit.png") no-repeat;
 }
 
 .catalog-item:nth-of-type(4n) {
@@ -1274,10 +1289,11 @@ label[for^="btn-slider-"]:hover {
   position: relative;
   top: -63px;
 
+  font-weight: 600;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 600;
   color: #ffffff;
+
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 
@@ -1287,10 +1303,9 @@ label[for^="btn-slider-"]:hover {
 
 .measure::before {
   content: "";
-  display: inline-block;
-  position: repeat;
   left: -10px;
 
+  display: inline-block;
   width: 35px;
   height: 35px;
 
@@ -1305,15 +1320,15 @@ label[for^="btn-slider-"]:hover {
   padding-right: 2px;
   padding-left: 2px;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }
 
 .catalog-item-title span {
-  border-bottom: 1px solid rgba(255, 255, 255, .2)
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 .catalog-item:hover span {
@@ -1327,19 +1342,19 @@ label[for^="btn-slider-"]:hover {
 .catalog-item .btn {
   position: absolute;
   right: 0;
-  left: 0;
   bottom: 20px;
+  left: 0;
 
-  visibility: hidden;
   width: 200px;
   margin: auto;
   padding: 11px 14px 10px;
+  box-sizing: border-box;
 
   font-size: 18px;
   line-height: 24px;
 
-  box-sizing: border-box;
   opacity: 0;
+  visibility: hidden;
 }
 
 .pagination {
@@ -1352,18 +1367,17 @@ label[for^="btn-slider-"]:hover {
 
 .pagination a {
   display: inline-block;
-  height: 26px;
   padding: 0 8px;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 500;
-  color: #ffffff;
-  vertical-align: top;
   text-align: center;
-  text-decoration: none;
+  vertical-align: top;
+  color: #ffffff;
 
   border-radius: 100px;
+  text-decoration: none;
 }
 
 .pagination a:hover {
@@ -1388,8 +1402,8 @@ label[for^="btn-slider-"]:hover {
   position: relative;
   min-width: 9px;
 
-  text-indent: -100px;
   overflow: hidden;
+  text-indent: -100px;
 }
 
 .prev:active::after,
@@ -1426,14 +1440,16 @@ label[for^="btn-slider-"]:hover {
 
 .prev::before,
 .prev:active.prev::after {
-  transform: rotate(-45deg);
   left: 10px;
+
+  transform: rotate(-45deg);
 }
 
 .next::before,
 .next:active.next::after  {
-  transform: rotate(135deg);
   right: 9px;
+
+  transform: rotate(135deg);
 }
 
 .disabled::before,
@@ -1442,7 +1458,7 @@ label[for^="btn-slider-"]:hover {
 }
 
 .pagination .disabled:hover {
-   background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .features {
@@ -1450,15 +1466,16 @@ label[for^="btn-slider-"]:hover {
   margin-bottom: 40px;
   padding: 24px 17px 24px 19px;
 
-  border-radius: 15px;
   background: #efe2c7 url("../img/features-background.jpg");
+  border-radius: 15px;
 }
 
 .features-title {
   margin: 0;
+
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 500;
 }
 
 .features-wrapper {
@@ -1467,11 +1484,11 @@ label[for^="btn-slider-"]:hover {
 
 .features-item {
   position: relative;
+
   float: left;
   width: 48.85%;
   padding-top: 12px;
   padding-left: 56px;
-
   box-sizing: border-box;
 }
 
@@ -1526,9 +1543,9 @@ label[for^="btn-slider-"]:hover {
 .subscribe {
   width: 48.85%;
   min-height: 220px;
+  box-sizing: border-box;
 
   border-radius: 15px;
-  box-sizing: border-box;
 }
 
 .news {
@@ -1544,9 +1561,9 @@ label[for^="btn-slider-"]:hover {
   margin: 0;
   margin-bottom: 5px;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
   color: #5a5a5a;
 }
 
@@ -1555,12 +1572,12 @@ label[for^="btn-slider-"]:hover {
 }
 
 .news-link {
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
   color: #353535;
 
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, .8);
 }
 
 .subscribe {
@@ -1568,7 +1585,7 @@ label[for^="btn-slider-"]:hover {
 
   float: right;
 
-  background-color: #ffffff ;
+  background-color: #ffffff;
   background-image: repeating-linear-gradient(-45deg, #ffffff 7px, #fe9e90 7px, #fe9e90 14px, #ffffff 14px, #ffffff 21px, #92cdff 21px, #92cdff 28px, #ffffff 28px, #ffffff 35px);
 }
 
@@ -1576,21 +1593,21 @@ label[for^="btn-slider-"]:hover {
   position: absolute;
   top: 5px;
   right: 5px;
-  left: 5px;
   bottom: 5px;
+  left: 5px;
 
   padding: 29px 21px;
 
-  border-radius: 10px;
   background-color: #f8f7f4;
+  border-radius: 10px;
 }
 
 .subscribe-text {
   margin: 0;
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
 }
 
 .subscribe-wrapper input[type="email"] {
@@ -1600,20 +1617,19 @@ label[for^="btn-slider-"]:hover {
 
 .subscribe-form {
   position: absolute;
-  left: 0;
   bottom: 35px;
+  left: 0;
 
   width: 100%;
-  padding-left: 20px;
   padding-right: 161px;
-
+  padding-left: 20px;
   box-sizing: border-box;
 }
 
 .subscribe-form label[for="subscribe-email-field"] {
   position: absolute;
-  left: 35px;
   bottom: 10px;
+  left: 35px;
 }
 
 .subscribe-form .btn {
@@ -1623,13 +1639,14 @@ label[for^="btn-slider-"]:hover {
 
   padding: 10px 15px 11px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   color: #fefefe;
 }
 
-input[type="email"]:focus ~ label[for="subscribe-email-field"] {
+input[type="email"]:focus ~ label[for="subscribe-email-field"],
+input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
   transform: translateY(-35px);
 }
 
@@ -1638,8 +1655,8 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 
   width: 100%;
   min-height: 428px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
   font-size: 50px;
 
@@ -1649,14 +1666,14 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 .main-footer {
   position: relative;
   min-height: 104px;
-  margin-left: 2.3%;
   margin-right: 2.3%;
+  margin-left: 2.3%;
   padding-top: 19px;
+  box-sizing: border-box;
 
   text-align: center;
 
   border-top: 1px solid rgba(255, 255, 255, .3);
-  box-sizing: border-box;
 }
 
 .main-contacts {
@@ -1667,14 +1684,14 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   width: 302px;
   padding: 30px 0 32px 26px;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  color: #323232;
   text-align: left;
+  color: #323232;
 
-  border-radius: 15px;
   background-color: #fefefe;
+  border-radius: 15px;
 }
 
 .main-contacts b {
@@ -1702,9 +1719,9 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   margin-top: 24px;
   padding: 9px 28px 11px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   color: #fefefe;
 }
 
@@ -1726,14 +1743,15 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   width: 38px;
   height: 38px;
   margin-right: 7px;
+  box-sizing: border-box;
 
   vertical-align: middle;
 
+  background: url("../img/sprites.png") no-repeat;
   border: 3px solid rgba(255, 255, 255, 0.625);
   border-radius: 50%;
-  box-sizing: border-box;
-  background: url("../img/sprites.png") no-repeat;
   opacity: 0.8;
+
   transition-duration: .2s;
 }
 
@@ -1772,18 +1790,17 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   padding-top: 12px;
 
   font-size: 13px;
-  vertical-align: top;
   text-align: left;
+  vertical-align: top;
 }
 
 .footer-links-part {
   display: inline-block;
   width: 150px;
   margin-right: 21px;
+  box-sizing: border-box;
 
   vertical-align: top;
-
-  box-sizing: border-box;
 }
 
 .footer-links-part:first-of-type {
@@ -1800,15 +1817,16 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+
   text-decoration: none;
 }
 
 .link-text,
 .copyright a {
   color: #ffffff;
-  text-decoration: none;
 
   border-bottom: 1px solid rgba(255, 255, 255, .2);
+  text-decoration: none;
 }
 
 .link-text:hover,
@@ -1839,11 +1857,11 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   width: 190px;
   padding-top: 42px;
 
+  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
   text-align: left;
+  color: #ffffff;
 }
 
 .footer-logo::before {
@@ -1875,11 +1893,10 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 .overlay-appear {
   display: block;
 
-  animation-delay: 0.2s;
-  animation-duration: .2s;
-  animation-fill-mode: forwards;
-  transition-duration: .2s;
   animation-name: appear;
+  animation-duration: .2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 .feedback-form {
@@ -1893,10 +1910,10 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   min-height: 442px;
   padding: 19px 25px 1px;
 
-  border-radius: 5px;
   background: #f8f7f4;
-  transform: translate(-50%, -50%);
+  border-radius: 5px;
 
+  transform: translate(-50%, -50%);
 }
 
 .content-show {
@@ -1946,9 +1963,9 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
   margin: 0;
   margin-bottom: 23px;
 
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 500;
   color: #323232;
 }
 
@@ -1986,12 +2003,13 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 @keyframes show {
   from {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(.2);
 
+    transform: translate(-50%, -50%) scale(.2);
   }
 
   to {
     opacity: 1;
+
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -1999,11 +2017,13 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 @keyframes appear {
   from {
     opacity: 0;
+
     transform: scale(.5);
   }
 
   to {
     opacity: .5;
+
     transform: scale(1);
   }
 }
