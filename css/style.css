@@ -330,7 +330,13 @@ h1 {
   width: 310px;
 }
 
-label {
+.search-form label,
+.login-form label,
+.login-form label,
+.subscribe label,
+.feedback-form label,
+.feedback-form label,
+.feedback-form textarea {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400px;
@@ -369,6 +375,20 @@ label {
   font-size: 11px;
   line-height: 13px;
   color: #5b9ddf;
+
+  transform: translateY(-25px);
+}
+
+.search-form input[type="search"]:valid:not(:focus) + label,
+.login-form input[type="email"]:valid:not(:focus) + label,
+.login-form input[type="password"]:valid:not(:focus) + label,
+.subscribe input[type="email"]:valid:not(:focus) + label,
+.feedback-form input[type="text"]:valid:not(:focus) + label,
+.feedback-form input[type="email"]:valid:not(:focus) + label,
+.feedback-form textarea:valid:not(:focus) + label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
 
   transform: translateY(-25px);
 }
@@ -428,8 +448,14 @@ label {
 .login-form label {
   position: absolute;
   left: 30px;
+}
 
-  margin-top: -52px;
+.login-form label[for="login-email-field"] {
+  top: 30px;
+}
+
+.login-form label[for="password-field"] {
+  top: 92px;
 }
 
 .login-form .btn {
@@ -1490,7 +1516,6 @@ label[for^="btn-slider-"]:hover {
   position: relative;
 
   margin: 0;
-  padding
 }
 
 .news-wrapper {
@@ -1949,7 +1974,7 @@ input[type="email"]:focus ~ label[for="subscribe-email-field"] {
 .feedback-form label[for="comments-field"] {
   position: absolute;
 
-  margin-top: -177px;
+  top: 269px;
 }
 
 .feedback-form .btn {

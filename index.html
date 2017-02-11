@@ -37,15 +37,15 @@
           <div class="user-block">
             <a class="user-block-search" href="#search-field"></a>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input type="search" name="search" id="search-field">
+              <input type="search" name="search" id="search-field" required>
               <label for="search-field">Что ищем?</label>
             </form>
 
             <a class="user-block-login" href="#login-email-field">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
-              <input type="email" name="login-email" id="login-email-field">
+              <input type="email" name="login-email" id="login-email-field" required>
               <label for="login-email-field">Электронная почта</label>
-              <input type="password" name="login-password" id="password-field">
+              <input type="password" name="login-password" id="password-field" required>
               <label for="password-field">Пароль</label>
               <button class="btn" type="submit">Войти</button>
               <div class="link-wrapper">
@@ -189,7 +189,7 @@
                 и&nbsp;будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input type="email" name="email" id="subscribe-email-field">
+                  <input type="email" name="email" id="subscribe-email-field" required>
                   <label for="subscribe-email-field">Электронная почта</label>
                   <button class="btn" type="submit">Отправить</button>
                 </form>
@@ -245,11 +245,11 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <a class="close" href="#"></a>
           <h2 class="feedback-title"><b>Мы вам обязательно ответим!</b></h2>
-          <input type="text" name="feedback-name" id="feedback-name-field">
+          <input type="text" name="feedback-name" id="feedback-name-field" required>
           <label for="feedback-name-field">Как вас зовут?</label>
-          <input type="email" name="feedback-email" id="feedback-email-field">
+          <input type="email" name="feedback-email" id="feedback-email-field" required>
           <label for="feedback-email-field">Ваша почта для ответа?</label>
-          <textarea name="comments" id="comments-field" cols="30" rows="10"></textarea>
+          <textarea name="comments" id="comments-field" cols="30" rows="10" required></textarea>
           <label for="comments-field">Напишите что-нибудь...</label>
           <button class="btn" type="submit">Отправить</button>
         </form>
