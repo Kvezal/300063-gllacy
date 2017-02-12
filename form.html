@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleformat.css">
+  </head>
+
+  <body class="inner-page">
+    <div class="content-wrapper">
+  	  <header class="main-header clearfix">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png"  width="154" height="64" alt="Gllacy">
+        </a>
+        <nav class="main-menu">
+          <ul>
+            <li class="list-sub-menu"><a href="#">Каталог</a>
+              <ul class="sub-menu">
+                <li class="subnav-item"><a class="subnav-link" href="#">Новинки</a></li>
+                <li class="subnav-item"><a class="subnav-link" href="catalog.html">Сливочное</a></li>
+                <li class="subnav-item"><a class="subnav-link" href="#">Щербеты</a></li>
+                <li class="subnav-item"><a class="subnav-link" href="#">Фруктовый лед</a></li>
+                <li class="subnav-item"><a class="subnav-link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="user-block-search" href="#search-field"></a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" id="search-field" required>
+            <label for="search-field">Что ищем?</label>
+          </form>
+
+         <a class="user-block-login" href="#login-email-field">Вход</a>
+         <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+           <input type="email" name="login-email" id="login-email-field" required>
+           <label for="login-email-field">Электронная почта</label>
+           <input type="password" name="login-password" id="password-field" required>
+           <label for="password-field">Пароль</label>
+           <button class="btn" type="submit">Войти</button>
+           <div class="link-wrapper">
+             <a class="login-form-link restore-link sign-link" href="#">Забыли пароль?</a>
+             <a class="login-form-link restore-link sign-link" href="#">Новая регистрация</a>
+           </div>
+         </form>
+         <div class="user-block-cart">Пусто</div>
+       </div>
+
+       <p class="working-time">
+         С 10 до 20, ежедневно
+         <b>8 812 450-25-25</b>
+       </p>
+  	  </header>
+
+  	  <main class="inner-page">
+        <div class="overlay"></div>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <a class="close" href="index.html"></a>
+          <h2 class="feedback-title"><b>Мы вам обязательно ответим!</b></h2>
+          <input type="text" name="feedback-name" id="feedback-name-field" required>
+          <label for="feedback-name-field">Как вас зовут?</label>
+          <input type="email" name="feedback-email" id="feedback-email-field" required>
+          <label for="feedback-email-field">Ваша почта для ответа?</label>
+          <textarea name="comments" id="comments-field" cols="30" rows="10" required></textarea>
+          <label for="comments-field">Напишите что-нибудь...</label>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </main>
+
+      <footer class="main-footer clearfix">
+        <div class="footer-social">
+          <a class="social social-tw" href="#"></a>
+          <a class="social social-inst" href="#"></a>
+          <a class="social social-fb" href="#"></a>
+          <a class="social social-vk" href="#"></a>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-links-part">
+            <a class="link-text heart-icon" href="#">Для поставщиков</a>
+            <a class="link-text" href="#">О производсве</a>
+          </div>
+          <div class="footer-links-part">
+            <a class="link-text" href="#">Наши документы</a>
+            <a class="link-text" href="#">Экологические стандарты</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <span class="footer-logo">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
