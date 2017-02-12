@@ -253,8 +253,9 @@ input[name="toggle"] {
   position: relative;
 
   float: right;
-  min-width: 284px;
+  width: 285px;
   margin-top: 23px;
+  margin-bottom: 15px;
   padding-left: 23px;
   box-sizing: border-box;
 
@@ -284,8 +285,8 @@ input[name="toggle"] {
 }
 
 .user-block-search {
-  width: 32px;
-  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
 
   background: url("../img/sprites.png") no-repeat 8px 7px;
   border-radius: 50%;
@@ -401,6 +402,7 @@ input[name="toggle"] {
 .user-block-login {
   position: relative;
 
+  min-width: 32px;
   margin-left: 5px;
   padding: 8px 17px 8px 45px;
 }
@@ -525,6 +527,7 @@ input[name="toggle"] {
 .user-block-cart {
   position: relative;
 
+  min-width: 39px;
   margin-left: 3px;
   padding: 8px 33px 8px 45px;
 }
@@ -532,8 +535,9 @@ input[name="toggle"] {
 .user-block-cart-full {
   position: relative;
 
+  min-width: 58px;
   margin-left: 1px;
-  padding: 8px 15px 9px 46px;
+  padding: 8px 15px 9px 44px;
 
   color: #323232;
 
@@ -545,7 +549,7 @@ input[name="toggle"] {
   content: "";
   position: absolute;
   top: 6px;
-  left: 18px;
+  left: 16px;
 
   width: 21px;
   height: 20px;
@@ -1144,6 +1148,19 @@ label[for^="btn-slider-"]:hover {
   border: 2px solid #ffffff;
 }
 
+.fat-wrap input:disabled + label::before {
+  border: 1px solid #ffffff;
+}
+
+.fat-wrap input:checked:disabled + label::after {
+  background-color: #ffffff;
+}
+
+.fat-wrap input:disabled + label {
+  opacity: .4;
+  cursor: default;
+}
+
 .filter-group label:disabled::before,
 .filter-group input + label:disabled::before {
   border-color: rgba(255, 255, 255, .4);
@@ -1202,11 +1219,26 @@ label[for^="btn-slider-"]:hover {
           transform: scale(.01);
 }
 
- .filler-taste-wrap input:checked + label::after {
+.filler-taste-wrap input:checked + label::after {
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
   -webkit-transform: rotate(-45deg) scale(1);
           transform: rotate(-45deg) scale(1);
+}
+
+.filler-taste-wrap input:disabled + label::before {
+  border: 1px solid #ffffff;
+}
+
+.filler-taste-wrap input:checked:disabled + label::after {
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-right: none;
+}
+
+.filler-taste-wrap input:disabled + label {
+  opacity: .4;
+  cursor: default;
 }
 
 .btn-filter {
@@ -1259,6 +1291,10 @@ label[for^="btn-slider-"]:hover {
   vertical-align: top;
 }
 
+img {
+  max-width: 100%
+}
+
 .over-block {
   position: absolute;
   top: -9px;
@@ -1305,7 +1341,7 @@ label[for^="btn-slider-"]:hover {
   width: 61px;
   height: 61px;
 
-  background: url("../img/hit.png") no-repeat;
+  background: url("../img/sprites.png") no-repeat -123px 0;
 }
 
 .catalog-item:nth-of-type(4n) {
@@ -1322,6 +1358,7 @@ label[for^="btn-slider-"]:hover {
   color: #ffffff;
 
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 .measure {
@@ -1337,6 +1374,7 @@ label[for^="btn-slider-"]:hover {
   height: 35px;
 
   text-align: top;
+  vertical-align: baseline;
 
   background: url("../img/sprites.png") no-repeat -184px 2px;
 }
@@ -1470,7 +1508,6 @@ label[for^="btn-slider-"]:hover {
   left: 10px;
 
   -webkit-transform: rotate(-45deg);
-
           transform: rotate(-45deg);
 }
 
@@ -1479,7 +1516,6 @@ label[for^="btn-slider-"]:hover {
   right: 9px;
 
   -webkit-transform: rotate(135deg);
-
           transform: rotate(135deg);
 }
 
@@ -1561,8 +1597,6 @@ label[for^="btn-slider-"]:hover {
 }
 
 .features-text {
-  position: relative;
-
   margin: 0;
 }
 
@@ -1612,9 +1646,8 @@ label[for^="btn-slider-"]:hover {
 }
 
 .subscribe {
-  position: relative;
-
   float: right;
+  padding: 5px;
 
   background-color: #ffffff;
   background-image: -webkit-repeating-linear-gradient(135deg, #ffffff 7px, #fe9e90 7px, #fe9e90 14px, #ffffff 14px, #ffffff 21px, #92cdff 21px, #92cdff 28px, #ffffff 28px, #ffffff 35px);
@@ -1622,12 +1655,9 @@ label[for^="btn-slider-"]:hover {
 }
 
 .subscribe-wrapper {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
+  position: relative;
 
+  min-height: 152px;
   padding: 29px 21px;
 
   background-color: #f8f7f4;
@@ -1636,6 +1666,7 @@ label[for^="btn-slider-"]:hover {
 
 .subscribe-text {
   margin: 0;
+  margin-bottom: 60px;
 
   font-weight: 400;
   font-size: 16px;
@@ -1649,12 +1680,12 @@ label[for^="btn-slider-"]:hover {
 
 .subscribe-form {
   position: absolute;
-  bottom: 35px;
   left: 0;
+  bottom: 35px;
 
   width: 100%;
-  padding-right: 161px;
-  padding-left: 20px;
+  padding-right: 159px;
+  padding-left: 21px;
   box-sizing: border-box;
 }
 
@@ -1666,10 +1697,11 @@ label[for^="btn-slider-"]:hover {
 
 .subscribe-form .btn {
   position: absolute;
-  right: 22px;
+  right: 20px;
   bottom: 0;
 
-  padding: 10px 15px 11px;
+  max-width: 128px;
+  padding: 10px 16px 11px;
 
   font-weight: bold;
   font-size: 18px;
@@ -1684,8 +1716,6 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 }
 
 .map {
-  position: relative;
-
   width: 100%;
   min-height: 428px;
   margin-right: auto;
@@ -1693,7 +1723,13 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 
   font-size: 50px;
 
-  background: #999999;
+  background: #999999 url("../img/map.jpg") no-repeat center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 428px;
+  border: 0;
 }
 
 .main-footer {
@@ -1749,6 +1785,7 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 }
 
 .main-contacts .btn {
+  max-width: 198px;
   margin-top: 24px;
   padding: 9px 28px 11px;
 
