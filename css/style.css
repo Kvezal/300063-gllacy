@@ -74,6 +74,9 @@ input[name="toggle"] {
   width: 160;
   margin-right: 9px;
   padding-top: 9px;
+
+  border: none;
+  outline: none;
 }
 
 .main-menu {
@@ -253,7 +256,7 @@ input[name="toggle"] {
   position: relative;
 
   float: right;
-  width: 286px;
+  max-width: 300px;
   margin-top: 23px;
   margin-bottom: 15px;
   padding-left: 23px;
@@ -336,7 +339,7 @@ input[name="toggle"] {
 .feedback-form label,
 .feedback-form label,
 .feedback-form textarea {
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   color: #999999;
 
@@ -779,8 +782,12 @@ main {
   cursor: pointer;
 }
 
-label[for^="btn-slider-"]:hover {
+.slider-controls label:hover {
   background-color: rgba(255, 255, 255, .4)
+}
+
+.slider-controls label:active {
+  background-color: #ffffff;
 }
 
 #btn-slider-1:checked ~ .site-wrapper label[for="btn-slider-1"],
@@ -1794,7 +1801,7 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 
 .footer-social {
   float: left;
-  width: 230px;
+  width: 240px;
   padding-top: 17px;
 
   text-align: left;
@@ -1850,7 +1857,7 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 .footer-links {
   display: inline-block;
   width: 405px;
-  padding-top: 12px;
+  padding-top: 14px;
 
   font-size: 13px;
   text-align: left;
@@ -1859,7 +1866,7 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 
 .footer-links-part {
   display: inline-block;
-  width: 150px;
+  width: 145px;
   margin-right: 21px;
   box-sizing: border-box;
 
@@ -1869,7 +1876,7 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
 .footer-links-part:first-of-type {
   position: relative;
 
-  padding-left: 31px;
+  padding-left: 27px;
 }
 
 .footer-links-part:last-of-type {
@@ -1905,7 +1912,7 @@ input[type="email"]:valid:not(:focus) ~ label[for="subscribe-email-field"]{
   content: "";
   position: absolute;
   top: 5px;
-  left: 9px;
+  left: 5px;
 
   width: 15px;
   height: 15px;
