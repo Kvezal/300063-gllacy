@@ -58,7 +58,7 @@ ymaps.ready(function() {
       balloonContent: 'Раздаем мороженки'
     }, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/ice_cream_icon.png',
+      iconImageHref: 'https://kvezal.github.io/gllacy/img/ice_cream_icon.png',
       iconImageSize: [218, 142],
       iconImageOffset: [-28, -142]
     });
