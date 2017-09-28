@@ -6,13 +6,9 @@
   "author": "Максим Воропай",
   "repository": {
     "type": "git",
-    "url": "git@github.com:htmlacademy-javascript/300063-kekstagram.git"
+    "url": "https://github.com/Kvezal/gllacy.git"
   },
-  "bugs": {
-    "url": "https://github.com/htmlacademy-javascript/300063-kekstagram/issues"
-  },
-  "homepage": "https://github.com/htmlacademy-javascript/300063-kekstagram",
-  "license": "MIT",
+  "homepage": "https://kvezal.github.io/gllacy",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "del": "^3.0.0",
